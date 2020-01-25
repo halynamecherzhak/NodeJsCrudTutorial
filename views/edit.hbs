@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit user</title>
+    <meta charset="utf-8" />
+    <style>.field{width:180px;}</style>
+</head>
+<body>
+    <h1>Edit user</h1>
+     <form action="/edit" method="POST">
+        <input type="hidden" name="id" value="{{user.id}}" />
+        <label>Username</label><br>
+        <input name="username" value="{{user.username}}"  class="field" /><br><br>
+        <label>Email</label><br>
+        <input name="email"  value="{{user.email}}"  class="field" /><br><br>
+        <label>Password</label><br>
+        <input name="password"  value="{{user.password}}"  class="field" /><br><br>
+        <input type="submit" value="SEND" />
+     </form>
+     <a href="/">BACK to users list</a>
+</body>
+<html>
